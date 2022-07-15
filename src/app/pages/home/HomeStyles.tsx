@@ -1,8 +1,12 @@
-import styled from '@emotion/styled';
-import { Typography as TypographyStyled } from "@mui/material";
 
-export const Typography = styled(TypographyStyled)`
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-`;
+
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles({
+  root: {
+    backgroundColor: '#f5f5f5',
+    textAlign: 'center',
+  },
+});
+
+export default useStyles;
