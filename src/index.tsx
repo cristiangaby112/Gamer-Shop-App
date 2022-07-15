@@ -6,6 +6,12 @@ import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./config/styles/themeConfig";
+import CssBaseline from "@mui/material/CssBaseline";
+import NavBar from "./app/components/NavBar";
+
+
+// import i18n (needs to be bundled ;))
+import "./i18next/i18n";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -14,6 +20,8 @@ root.render(
   <Provider store={store}>
     <React.StrictMode>
       <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <NavBar />
         <App />
       </ThemeProvider>
     </React.StrictMode>
