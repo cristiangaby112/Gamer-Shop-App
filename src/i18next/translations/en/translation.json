@@ -1,5 +1,6 @@
 {
-  "translation":{
-    "home":"Home"
+  "Home_container":{
+    "home":"Home",
+    "about":"About"
   }
 }

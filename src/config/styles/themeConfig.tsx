@@ -1,18 +1,23 @@
 import { createTheme } from '@mui/material/styles';
 
 
+
+export const colorPalette = {first: "#5d9b9b"}
 const theme = createTheme({
   palette:{
     primary: {
       light: "#ff7b02",
-      main: "#f36917",
-      dark: "#100f0d"
+      main: "#ffffff",
+      dark: "#b5b5b5",
+      
     },
     secondary: {
-      main: "#ffffff",
+      main: "#f36917",
     },
     
   }
 });
+
+
 
 export default theme;

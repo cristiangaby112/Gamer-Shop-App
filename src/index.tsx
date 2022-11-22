@@ -7,7 +7,7 @@ import { store } from "./redux/store";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./config/styles/themeConfig";
 import CssBaseline from "@mui/material/CssBaseline";
-import NavBar from "./app/components/NavBar";
+
 
 
 // import i18n (needs to be bundled ;))
@@ -21,7 +21,6 @@ root.render(
     <React.StrictMode>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <NavBar />
         <App />
       </ThemeProvider>
     </React.StrictMode>
